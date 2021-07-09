@@ -2,6 +2,7 @@
   "name": "typetype",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gitname.github.io/robofriends-ts",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -9,6 +10,8 @@
     "tachyons": "^4.12.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
@@ -19,6 +22,7 @@
     "@types/node": "^9.6.1",
     "@types/react": "^16.1.0",
     "@types/react-dom": "^16.0.4",
+    "gh-pages": "^3.2.3",
     "typescript": "^2.8.1"
   },
   "browserslist": [
